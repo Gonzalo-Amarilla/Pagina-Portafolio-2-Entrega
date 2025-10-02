@@ -1,0 +1,289 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  padding: 5%;
+  background: #222;
+  gap: 50px;
+}
+
+header {
+  width: 300px;
+  background-color: #444;
+  color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border-radius: 12px;
+}
+
+header h1,
+header img,
+header .skill,
+header .social-icons {
+  display: block;
+  margin: 0 auto 15px auto;
+  text-align: center;
+}
+
+header img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10%;
+  border: 5px solid #232121;
+}
+
+.skill {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.skill span {
+  background: #67bdd7;
+  color: #222;
+  padding: 4px 9px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00ff88;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #81bcab;
+  margin: 20px 0;
+}
+
+.personal-info {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.personal-info li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.texto-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.letras-oscuras {
+  font-weight: bold;
+  color: #ccc;
+}
+
+.iconos {
+  border: 2px solid #242424;
+  color: #ccc;
+  margin-right: 6px;
+  background-color: #d3d2d2;
+  border-radius: 10%;
+  padding: 3%;
+}
+
+.iconos i {
+  color: #222;
+  font-size: 18px;
+}
+
+.main1{
+  flex: 1;
+  background-color: #444;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+.main2{
+  width: 800px;
+  height: 375px;
+  background-color: #444;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+
+.navegacion {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: #333;
+  padding: 8px 15px;
+  border-radius: 25px;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.navegacion a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  transition: 0.9s;
+  border-radius: 15px;
+}
+
+.navegacion a:hover {
+  background-color: #47aac0;
+}
+
+.linea-separadora {
+  border: none;
+  border-top: 3px solid #47aac0;
+  margin-top: -15px;
+  width: 10%;
+  margin-left: 0;
+}
+
+.tecnologias {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 20px 0;
+}
+
+.tecnologias-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tecnologias2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.tecnologias2 img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+.skill-tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background-color: rgb(155, 155, 155);
+  padding: 10px;
+  border-radius: 8px;
+  margin: 0 40px 0 0px;
+}
+.timeline {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 0;
+  position: relative;
+}
+
+.timeline h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 25px;
+  margin-top: -40px;
+}
+
+.timeline-container {
+  position: relative;
+  padding-left: 10px;
+  border-left: 1px solid #3498db;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #3498db;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  background: #585959;
+  padding: 15px 20px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  color: #3498db;
+}
+
+.timeline-content h4 {
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.timeline-content p {
+  margin: 5px 0 0;
+  line-height: 1.5;
+}
+
+.botones-contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.botones-contacto a {
+  background-color: #67bdd7;
+  color: #222;
+  margin: 20px;
+  padding: 10px 60px 10px 60px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+  text-align: center;
+}
+.botones-contacto a.contacto1{
+  background-color: #25D366;
+
+}
+
+.botones-contacto a.contacto2{
+  background-color: #e4e4e4;
+}
+
+.botones-contacto a.contacto3{
+  background-color: #378fbe;
+}
+
+.botones-contacto a.contacto4{
+  background-color: #9c9c9c;
+}
+
+.botones-contacto a:hover {
+  background-color: #47aac0;
+}
