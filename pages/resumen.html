@@ -1,115 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gonzalo Amarilla</title>
+    <meta name="description" content="Resumen profesional y educación de Gonzalo Amarilla. Formación en desarrollo web, experiencia como Front-End Developer y proyectos freelance." />
+    <meta name="keywords" content="educación, formación, resumen profesional, timeline, UNLaM, front-end developer, freelance" />
+    <meta name="author" content="Gonzalo Amarilla" />
+    <meta name="robots" content="index, follow" />
+    
+    <title>Summary - Gonzalo Amarilla | Educación y Experiencia</title>
+    
     <link rel="stylesheet" href="../style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-  />
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   </head>
   <body>
     <div class="layout">
-      <header>
+      <header role="banner">
         <h1>Gonzalo Amarilla</h1>
-        <img src="../assets/imagenportafolio.jpg" alt="Foto de Gonzalo Amarilla" />
+        <img src="../assets/imagenportafolio.jpg" alt="Fotografía profesional de Gonzalo Amarilla, desarrollador web" width="200" height="200" loading="lazy" />
 
-        <section class="skill">
+        <section class="skill" aria-label="Especialización profesional">
           <span>Web Developer</span>
         </section>
 
-        <div class="social-icons">
-          <a href="mailto:gonzaloamarilla158@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-          <a href="https://wa.me/541169707786"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
-          <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
+        <nav class="social-icons" aria-label="Redes sociales y contacto">
+          <a href="mailto:gonzaloamarilla158@gmail.com" aria-label="Enviar correo electrónico a Gonzalo Amarilla" title="Email">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
+          <a href="https://wa.me/541169707786" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp" title="WhatsApp">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/gonzaloamarilla" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil de GitHub" title="GitHub">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://linkedin.com/in/gonzaloamarilla" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil de LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </nav>
 
-        <hr />
+        <hr aria-hidden="true" />
 
-        <ul class="personal-info">
+        <ul class="personal-info" aria-label="Información de contacto">
           <li>
-            <span class="iconos"><i class="fa-solid fa-envelope"></i></span>
+            <span class="iconos" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span>
             <div class="texto-info">
               <span class="letras-oscuras">Email:</span>
               <span>gonzaloamarilla158@gmail.com</span>
             </div>
           </li>
           <li>
-            <span class="iconos"><i class="fa-brands fa-whatsapp"></i></span>
+            <span class="iconos" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
             <div class="texto-info">
               <span class="letras-oscuras">Phone:</span>
-              <span>+54 1169707786</span>
+              <span>+54 11 6970 7786</span>
             </div>
           </li>
           <li>
-            <span class="iconos"><i class="fa-solid fa-location-dot"></i></span>
+            <span class="iconos" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
             <div class="texto-info">
               <span class="letras-oscuras">Location:</span>
               <span>Buenos Aires, Argentina</span>
             </div>
           </li>
           <li>
-            <span class="iconos"><i class="fa-solid fa-calendar"></i></span>
+            <span class="iconos" aria-hidden="true"><i class="fa-solid fa-calendar"></i></span>
             <div class="texto-info">
               <span class="letras-oscuras">Birthdate:</span>
-              <span>11/01/2007</span>
+              <time datetime="2007-01-11">11/01/2007</time>
             </div>
           </li>
         </ul>
       </header>
 
-      <main class="main1">
-        <nav class="navegacion">
-            <a href="../index.html">About me</a>
-            <a href="./skills.html">Skills</a>
-            <a href="./resumen.html">Summary</a>
-            <a href="./proyectos.html">Projects</a>
-            <a href="./contacto.html">Contact</a>
+      <main class="main1" role="main">
+        <nav class="navegacion" aria-label="Navegación principal">
+          <a href="../index.html">About me</a>
+          <a href="./skills.html">Skills</a>
+          <a href="./resumen.html" aria-current="page">Summary</a>
+          <a href="./proyectos.html">Projects</a>
+          <a href="./contacto.html">Contact</a>
         </nav>
 
-        <section id="acerca-de">
-          <h2>Summary</h2>
-          <hr class="linea-separadora" />
-          <section class="timeline">
-  <h2>Education</h2>
-  <div class="timeline-container">
+        <section id="summary-intro" aria-labelledby="summary-heading">
+          <h2 id="summary-heading">Summary</h2>
+          <hr class="linea-separadora" aria-hidden="true" />
+          
+          <article class="timeline" aria-labelledby="education-heading">
+            <h3 id="education-heading">Education & Experience</h3>
+            <div class="timeline-container" role="list">
 
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <h3>2025</h3>
-        <h4>Web Development Technician – UNLaM</h4>
-        <p>Completed intensive training in Java, JavaScript, HTML, CSS, and React. Worked on multiple projects simulating real-world applications.</p>
-      </div>
-    </div>
+              <article class="timeline-item" role="listitem">
+                <div class="timeline-content">
+                  <h4><time datetime="2025">2025</time></h4>
+                  <h5>Web Development Technician – UNLaM</h5>
+                  <p>Completed intensive training in Java, JavaScript, HTML, CSS, and React. Worked on multiple projects simulating real-world applications.</p>
+                </div>
+              </article>
 
-      <div class="timeline-item">
-      <div class="timeline-content">
-        <h3>March 2025 – June 2025</h3>
-        <h4>Front-End Developer Intern – TechWave Solutions</h4>
-        <p>Built responsive pages with HTML, CSS, React and collaborated in Agile teams.</p>
-      </div>
-    </div>
+              <article class="timeline-item" role="listitem">
+                <div class="timeline-content">
+                  <h4><time datetime="2025-03">March 2025</time> – <time datetime="2025-06">June 2025</time></h4>
+                  <h5>Front-End Developer Intern – TechWave Solutions</h5>
+                  <p>Built responsive pages with HTML, CSS, React and collaborated in Agile teams.</p>
+                </div>
+              </article>
 
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <h3>2024 – 2025</h3>
-        <h4>Freelance Web Developer</h4>
-        <p>Designed and developed websites for small businesses with a focus on usability and client satisfaction.</p>
-      </div>
-    </div>
+              <article class="timeline-item" role="listitem">
+                <div class="timeline-content">
+                  <h4><time datetime="2024">2024</time> – <time datetime="2025">2025</time></h4>
+                  <h5>Freelance Web Developer</h5>
+                  <p>Designed and developed websites for small businesses with a focus on usability and client satisfaction.</p>
+                </div>
+              </article>
 
-  </div>
-</section>
-
+            </div>
+          </article>
+        </section>
       </main>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
